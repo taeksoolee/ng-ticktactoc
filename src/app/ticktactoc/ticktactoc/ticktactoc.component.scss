@@ -1,0 +1,22 @@
+.ticktactoc__wrapper {
+  display: flex;
+
+  & .ticktactoc__inner-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: {
+      top: 2rem;
+      bottom: 2rem;
+    }
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ticktactoc__wrapper {
+    flex-direction: column;
+    & .ticktactoc__inner-wrapper {
+      width: 100vw;
+    }
+  }
+}

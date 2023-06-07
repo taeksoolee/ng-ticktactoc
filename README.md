@@ -25,3 +25,24 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Angular CLI 사용방법
+
+### module 생성
+```
+# ng generate module <module-name>
+# ng g m <module-name>
+```
+
+### module 안에서 generate 명령어로 요소 생성
+1. module directory로 이동해서 생성
+```
+cd src/app/<module-name> # module directory로 이동 
+ng g c ...
+```
+2. 명령어로 생성
+```
+# 컴포넌트 생성 예시
+# ng g c <module-name>/<component-name> --module <module-name> [--prefix <module-name>]
+# ng g c <module-name>/<component-name> -m <module-name> [-p <module-name>]
+```

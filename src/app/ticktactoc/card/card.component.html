@@ -1,0 +1,12 @@
+<button 
+  [ngSwitch]="value" 
+  type="button"
+  class="ticktactoc-card__wrapper" 
+  [disabled]="!!value || isGameOver"
+  (click)="onClick()"
+  ticktactocPlayer="value"
+  [player]="value"
+>
+  {{ value | playerSign }}
+</button>
+

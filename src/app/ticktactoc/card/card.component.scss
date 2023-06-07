@@ -1,0 +1,17 @@
+.ticktactoc-card__wrapper {
+  padding: 2rem;
+  width: 5rem;
+  height: 5rem;
+
+  &.player-1 {
+    color: blue;
+  }
+
+  &.player-2 {
+    color: red;
+  }
+
+  &.player-none {
+
+  }
+}

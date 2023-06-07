@@ -3,14 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TicktactocModule } from './ticktactoc/ticktactoc.module';
+import { ComponentModule } from './component/component.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ComponentModule,
+    TicktactocModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

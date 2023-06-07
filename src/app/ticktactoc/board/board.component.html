@@ -1,0 +1,10 @@
+<div class="ticktactoc-board__wrapper">
+  <div class="row" *ngFor="let row of board; index as rowIdx">
+    <div class="column" *ngFor="let col of row; index as colIdx">
+      <ticktactoc-card
+        [value]="col"
+        (clickCard)="onClick(rowIdx, colIdx)"
+      ></ticktactoc-card>
+    </div>
+  </div>
+</div>

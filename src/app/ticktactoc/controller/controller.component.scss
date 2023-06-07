@@ -1,0 +1,16 @@
+.ticktactoc-controller__wrapper {
+  width: 15rem;
+
+  & .ticktactoc-controller__inner-wrapper {
+    margin: {
+      bottom: 2rem;
+    }
+  }
+
+  & .value {
+    padding: {
+      left: 1rem;
+    }
+    font-weight: bold;
+  }
+}

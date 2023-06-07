@@ -1,0 +1,10 @@
+<div class="ticktactoc-controller__wrapper">
+  <div *ngIf="!isGameOver" class="ticktactoc-controller__inner-wrapper">
+    Current Tern User : <b class="value">{{ player | player }}</b> 🙍
+  </div>
+  <div *ngIf="isGameOver" class="ticktactoc-controller__inner-wrapper">
+    Winner is <b class="value">{{winner | player}}</b> 🎉
+  </div>
+  <button #resetBtn [disabled]="isFirstRound">ReStart ♻️</button>
+</div>
+
